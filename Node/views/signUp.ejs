@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+</head>
+<body>
+
+    <h1>Sign Up</h1>
+
+    <% if (locals.name) { %>
+     <p>User Created : <%= name %></p>
+    <% } %>
+
+    <form method="POST" action="/user">
+        <input type="text" name="name" placeholder="name"/>
+        <input type="email" name="email" placeholder="email"/>
+        <input type="password" name="password" placeholder="password"/>
+        <button type="submit">Submit</button>
+    </form>
+
+    <% if (locals.users) { %>
+        <table>
+            <thead>
+                <th>sr no</th>
+                <th>name</th>
+                <th>email</th>
+               
+            </thead>
+            <tbody>
+                <% users.forEach((user,index) => { %>
+                    <tr>
+                    <td><%= index+1 %></td>
+                    <td><%= user.name %></td>
+                    <td><%= user.password %></td>
+                </tr>
+                <% }) %>
+            </tbody>
+        </table>
+    <% } %>
+    
+</body>
+</html>
