@@ -1,53 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Demo Website</title>
+    <title>TrulyInbox</title>
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-
-<body class="hello">
-    <!-- Html layout using semantic -->
-    <!-- Header start -->
-    <header>
-        <h1>header</h1>
+<body>
+    <div class="combine">
+    <!--Header Start-->
+    <header class="header">
+        <div class="container__nav">
+            <div class="header__row flex" id="myHeader">
+            <div class="header__logo">
+                <a href="#"><img src="./assets/images/logo.png" alt="TrulyInbox"></a>
+            </div>
+            <nav class="header__nav flex" id="nav-links">
+                <ul class="header__nav-list flex">
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">Blog</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">Resources</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">Pricing</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">Log In</a></li>
+                    
+                </ul>
+                <ul class="header__btn">
+                    <li class="header__nav-item"><a href="#" class="header__nav-link header__nav-link--cta">Try for Free!</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="nav-toggle header__nav-link" id="nav-toggle"><i class="fa-solid fa-bars"></i></a>
+          </div>
+        </div>
     </header>
-    <!-- Header end -->
-    <!-- nav start -->
-    <nav>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </nav>
-    <!-- nav end -->
-    <!-- Main start -->
-    <main>
-        main
-        <!-- Section start -->
-        <section>
-            section
-            <header>header</header>
-            <article>article</article>
-            <footer>footer</footer>
+    <!--Hero Section-->
+    <section class="hero">
+        <div class="container">
+            <div class="hero__content">
+                <div class="hero__caption flex">
+                <h1 class="hero__title">Boost your deliverability<br> with 2x revenue</h1>
+                <p class="hero__subtitle">TrulyInbox is the email warm-up tool that interacts with your inbox in a human way to<br> improve your sender's reputation.</p>
+            </div>
+            <div class="hero__contact flex">
+                <div class="hero__form flex">
+                    <input type="email" placeholder="Enter your work email" class="hero__input">
+                    <button class="hero__button primary-btn flex">Sign up for free <span><img src="./assets/images/right-icon.png" alt="Arrow"></span></button>
+                </div>
+                <div class="hero__trial flex">
+                    <p class="hero__trial-info flex"><img src="./assets/images/free.png" alt="Free">7-day free trial</p>
+                    <p class="hero__trial-info flex"><img src="./assets/images/card.png" alt="Card">No credit card required</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+        <!--Analytics Section-->
+        <section class="analytics flex">
+            <div class="analytics__left">
+                <div class="analytics__email">
+                    <img src="./assets/images/analytics-pic-1.png" alt="Analytics">
+                </div>
+                <div class="analytics__warm">
+                    <img src="./assets/images/analytics-pic-2.png" alt="warm">
+                </div>
+            </div>
+            <div class="analytics__center">
+                <img src="./assets/images/analytics-pic-3.png" alt="Detail">
+            </div>
+            <div class="analytics__right">
+                <div class="analytics__total">
+                    <img src="./assets/images/analytics-pic-4.png" alt="Total">
+                </div>
+                <div class="analytics__address">
+                    <img src="./assets/images/analytics-pic-5.png" alt="Address">
+                </div>
+            </div>
+        </section>  
+</div>
+    <!--Main-->
+    <main class="main">
+  
+    <!--Features Section-->
+        <section class="features">
+          <div class="container">
+            <div class="features__wrap flex">
+            <div class="features__info flex">
+                <h2 class="features__title">Avoid spam & reach more.</h2>
+                <p class="features__description">TrulyInbox is the email warm-up tool that interacts with your inbox in a human way to improve your sender's reputation.</p>
+                <button class="features__button primary-btn flex">Sign up for free <span><img src="./assets/images/right-icon.png" alt="Arrow"></span></button>
+            </div>
+            <div class="features__content flex">
+                <div class="features__item">
+                    <div class="features__caption flex-col">
+                    <h3 class="features__title">Human-like interaction for a real warm-up</h3>
+                    <p class="features__description">TrulyInbox’s warm-up sends emails like a real human, one at a time and at varying intervals for natural interaction with your inbox for a high Sender’s Reputation.</p>
+                     </div>
+                    <!-- Include image here -->
+                     <div class="features__img features__img--first">
+                        <img src="./assets/images/project-1.png" alt="Project">
+                     </div>
+                </div>
+                <div class="features__item">
+                    <div class="features__caption flex-col">
+                    <h3 class="features__title">Improve your sending limit and reputation</h3>
+                    <p class="features__description">You can increase your email frequency gradually as your Sender's Reputation improves, helping to ensure that your emails land in the right inbox and avoid being marked as spam.</p>
+                    </div>
+                    <!-- Include image here -->
+                    <div class="features__img features__img--second">
+                        <img src="./assets/images/project-2.png" alt="Project">
+                    </div>
+                </div>
+                <div class="features__item">
+                    <div class="features__caption flex-col">
+                    <h3 class="features__title">Monitor your deliverability to avoid spam</h3>
+                    <p class="features__description">TrulyInbox’s deliverability score lets you track your inbox reputation and deliverability rate, allowing you to keep an eye on your sending pattern.</p>
+                </div>
+                    <!-- Include image here -->
+                    <div class="features__img features__img--third">
+                        <img src="./assets/images/project-3.png" alt="Project">
+                     </div>
+                </div>
+                </div>
+            </div>
+          </div>
         </section>
-        <!-- Section end -->
-        <!-- Aside start -->
-        <aside>
-            aside
-        </aside>
-        <!-- Aside end -->
+         <!--Cta Section-->
+        <section class="cta">
+          <div class="container">
+            <div class="cta__inner flex-col">
+              <img src="./assets/images/email-icon.png" alt="Email">  
+            <h2 class="cta__title">3 minutes to set up,<br> lifelong results.</h2>
+            <button class="cta__button primary-btn">Boost your deliverability now!</button>
+            </div>
+          </div>
+        </section>
     </main>
-    <!-- Main end -->
-    <!-- Footer start -->
-    <footer>
-        footer
+     <!--footer Section-->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner flex">
+            <p class="footer__text">© 2023 TrulyInbox. All rights reserved</p>
+            <ul class="footer__links flex">
+                <li class="footer__link"><a href="#">Get Help</a></li>
+                <li class="footer__link"><a href="#">Privacy Policy</a></li>
+                <li class="footer__link"><a href="#">Terms & Conditions</a></li>
+            </ul>
+        </div>
+        </div>
     </footer>
-    <!-- Footer end -->
-</body>
-<script src="assets/js/script.js"></script>
 
+    <script src="./assets/js/script.js"></script>
+</body>
 </html>
